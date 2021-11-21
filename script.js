@@ -18,11 +18,5 @@ function generatePassword() {
     alert("password length must be a numeric value between 8 and 128");
     return "";
   }
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  //setting generate password in HTML
-  passwordText.value = password;
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//ask user for additional criteria
