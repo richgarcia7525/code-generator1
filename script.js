@@ -20,3 +20,8 @@ function generatePassword() {
   }
 }
 //ask user for additional criteria
+const caseLower = prompt("Include Lowercase yes or no ");
+const caseUpper = prompt("Include Uppercase yes or no ");
+const numericCriteria = prompt("Include Numeric yes or no ");
+const specialCriteria = prompt("Include Special Characters yes or no");
+
