@@ -91,3 +91,4 @@ function generatePassword() {
     return String.fromCharCode(randomIntFromInterval(97, 120));
   }
 }
+//end of password generator
