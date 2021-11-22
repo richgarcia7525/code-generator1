@@ -51,3 +51,23 @@ if (isnumeric) {
 if (isspecial) {
   password = password + randomSpecial();
 }
+//complete password after meeting initial criteria
+do{
+  let passwordLength = password.length;
+  //complete the password criteria
+  for (let i = passwordLength; i < Number(length); i++) {
+    //generate a random position between 1 , 4 
+    const position = randomIntFromInterval(1, 4);
+    if (isLower && position == 1) {
+      password = password + randomLower();
+    }
+  if (isUpper && position == 2) {
+    password = password + randomUpper();
+  }
+  if (isnumeric && position == 3) {
+    password = password + randomNumber();
+  }
+  if (isspecial && position == 4) {
+    password = password + randomSpecial();
+  }
+}
