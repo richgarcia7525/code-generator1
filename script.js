@@ -30,3 +30,9 @@ let isLower = caseLower && caseLower.toLowerCase() == "yes";
 let isUpper = caseUpper && caseUpper.toLowerCase() == "yes";
 let isNumeric = numericCriteria && numericCriteria.toLowerCase() == "yes";
 let isSpecial = specialCriteria && specialCriteria.toLowerCase() == "yes";
+
+if (!isLower && !isUpper && !isnumeric && !isspecial) {
+  //no criteria has been selected then return null
+  alert("No Criteria has been selected");
+  return"";
+}
