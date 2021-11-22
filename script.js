@@ -25,3 +25,8 @@ const caseUpper = prompt("Include Uppercase yes or no ");
 const numericCriteria = prompt("Include Numeric yes or no ");
 const specialCriteria = prompt("Include Special Characters yes or no");
 
+//Using the variables to check if user met criteria
+let isLower = caseLower && caseLower.toLowerCase() == "yes";
+let isUpper = caseUpper && caseUpper.toLowerCase() == "yes";
+let isNumeric = numericCriteria && numericCriteria.toLowerCase() == "yes";
+let isSpecial = specialCriteria && specialCriteria.toLowerCase() == "yes";
