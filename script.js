@@ -36,3 +36,18 @@ if (!isLower && !isUpper && !isnumeric && !isspecial) {
   alert("No Criteria has been selected");
   return"";
 }
+//starting with empty password 
+let password = "";
+//satisfy criteria in the first character
+if (isLower) {
+  password = password + randomLower();
+}
+if (isUpper) {
+  password = password + randomUpper();
+}
+if (isnumeric) {
+  password = password + randomNumber();
+}
+if (isspecial) {
+  password = password + randomSpecial();
+}
